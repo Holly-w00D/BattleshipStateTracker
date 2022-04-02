@@ -5,12 +5,11 @@ using System.Threading.Tasks;
 
 namespace BattleshipStateTracker.Enums
 {
-    public enum ShipTypes
+    public enum BoardCellStatus
     {
-        AircraftCarrier = 5,
-        Battleship = 4,
-        Cruiser  = 3,
-        Submarine = 2,
-        Destroyer = 1,
+        Unoccupied,
+        Occupied,
+        Hit,
+        Miss
     }
 }
