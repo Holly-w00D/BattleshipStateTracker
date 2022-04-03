@@ -2,7 +2,7 @@
 {
     public class BoardParameters
     {
-        public int Row { get; set; }
-        public int Column { get; set; }
+        public int Rows { get; set; }
+        public int Columns { get; set; }
     }
 }

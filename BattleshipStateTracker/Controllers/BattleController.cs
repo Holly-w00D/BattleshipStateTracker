@@ -6,7 +6,7 @@ using Microsoft.AspNetCore.Mvc;
 
 namespace BattleshipStateTracker.Controllers
 {
-    [Route("api/v1/battle")]
+    [Route("api/battle")]
     [ApiController]
     public class BattleController : ControllerBase
     {
@@ -17,9 +17,9 @@ namespace BattleshipStateTracker.Controllers
             try
             {
                 var boardCreate = new BoardCreator();
-                var board = boardCreate.CreateBoard(newBoard.Row, newBoard.Column);
+                var board = boardCreate.CreateBoard(newBoard.Rows, newBoard.Columns);
 
-                return Ok("Successfully created board with " + newBoard.Row + " rows and " + newBoard.Column + " columns");
+                return Ok("Successfully created board with " + board.Rows + " rows and " + board.Columns + " columns");
             }
             catch (System.Exception)
             {
