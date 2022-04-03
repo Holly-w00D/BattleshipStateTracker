@@ -13,6 +13,8 @@ namespace BattleshipStateTracker.Implementations
             for (int i = 0; i < ship.Size; i++)
             {
                 board.BoardCellStatuses[row, column + i] = BoardCellStatus.Occupied;
+
+                board.OccupationCount++;
             }
         }
         

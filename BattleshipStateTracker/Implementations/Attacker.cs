@@ -6,7 +6,7 @@ namespace BattleshipStateTracker.Implementations
 {
     public class Attacker : IAttacker
     {
-        AttackStatus IAttacker.Attack(Board board, int row, int column)
+        public AttackStatus Attack(Board board, int row, int column)
         {
             Validate(board, row, column);
             

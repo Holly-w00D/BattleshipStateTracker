@@ -29,7 +29,7 @@ namespace BattleshipStateTracker.Implementations
             }
             catch (Exception ex)
             {
-                throw new System.Exception($"Error creating board: {ex.Message}");
+                throw new Exception($"Error creating board: {ex.Message}");
 
             }
         }

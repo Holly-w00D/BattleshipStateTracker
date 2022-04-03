@@ -8,7 +8,6 @@ namespace BattleshipStateTracker.Classes
 {
     public abstract class Ship
     {
-        public int ShipID { get; set; }
         public ShipTypes ShipType { get; set; }
         public int Size { get; set; }
     }
