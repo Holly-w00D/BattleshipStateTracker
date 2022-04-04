@@ -14,10 +14,13 @@ namespace Battleship.Tests
         [InlineData(ShipTypes.Submarine)]
         public void TestShipCreate(ShipTypes shipType)
         {
+            //Arrange
             var shipCreator = new ShipCreator();
-            
+
+            //Act
             var ship = shipCreator.CreateShip(shipType);
-            
+
+            //Assert
             Assert.NotNull(ship);
         }
     }

@@ -14,6 +14,7 @@ namespace Battleship.Tests
         [Fact]
         public void ShipsSunk_GameLost()
         {
+            //Arrange
             var boardCreator = new BoardCreator();
             var board = boardCreator.CreateBoard(10, 10);
 
@@ -23,16 +24,19 @@ namespace Battleship.Tests
             var shipPlacer = new ShipPlacer();
             shipPlacer.PlaceShip(ship, board, 0, 0);
 
+            //Act
             var attacker = new Attacker();
             attacker.Attack(board, 0, 0);
             attacker.Attack(board, 0, 1);
 
+            //Assert
             Assert.True(board.HasLost);
         }
 
         [Fact]
         public void ShipsNotSunk_GameContinue()
         {
+            //Arrange
             var boardCreator = new BoardCreator();
             var board = boardCreator.CreateBoard(10, 10);
 
@@ -42,9 +46,11 @@ namespace Battleship.Tests
             var shipPlacer = new ShipPlacer();
             shipPlacer.PlaceShip(ship, board, 0, 0);
 
+            //Act
             var attacker = new Attacker();
             attacker.Attack(board, 0, 0);
 
+            //Assert
             Assert.False(board.HasLost);
         }
 

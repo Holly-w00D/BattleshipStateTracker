@@ -26,6 +26,7 @@ namespace Battleship.Tests
         ShipTypes shipType,
         BoardCellStatus boardCellStatus)
         {
+            //Arrange
             var boardCreator = new BoardCreator();
             var board = boardCreator.CreateBoard(boardRows, boardColumns);
 
@@ -35,9 +36,12 @@ namespace Battleship.Tests
             var shipPlacer = new ShipPlacer();
             shipPlacer.PlaceShip(ship, board, placementRow, placementColumn);
 
+            //Act
+
             var attacker = new Attacker();
             attacker.Attack(board, attackRow, attackColumn);
 
+            //Assert
             Assert.True(board.BoardCellStatuses[attackRow, attackColumn] == boardCellStatus);
         }
         [Theory]
@@ -59,6 +63,7 @@ namespace Battleship.Tests
         ShipTypes shipType,
         BoardCellStatus boardCellStatus)
         {
+            //Arrange
             var boardCreator = new BoardCreator();
             var board = boardCreator.CreateBoard(boardRows, boardColumns);
 
@@ -68,9 +73,11 @@ namespace Battleship.Tests
             var shipPlacer = new ShipPlacer();
             shipPlacer.PlaceShip(ship, board, placementRow, placementColumn);
 
+            //Act
             var attacker = new Attacker();
             attacker.Attack(board, attackRow, attackColumn);
 
+            //Assert
             Assert.True(board.BoardCellStatuses[attackRow, attackColumn] == boardCellStatus);
         }
         [Theory]
@@ -92,6 +99,7 @@ namespace Battleship.Tests
         ShipTypes shipType,
         BoardCellStatus boardCellStatus)
         {
+            //Arrange
             var boardCreator = new BoardCreator();
             var board = boardCreator.CreateBoard(boardRows, boardColumns);
 
@@ -101,9 +109,11 @@ namespace Battleship.Tests
             var shipPlacer = new ShipPlacer();
             shipPlacer.PlaceShip(ship, board, placementRow, placementColumn);
 
+            //Act
             var attacker = new Attacker();
             attacker.Attack(board, attackRow, attackColumn);
-
+            
+            //Assert
             Assert.True(board.BoardCellStatuses[attackRow, attackColumn] == boardCellStatus);
         }
         [Theory]
@@ -125,6 +135,7 @@ namespace Battleship.Tests
         ShipTypes shipType,
         BoardCellStatus boardCellStatus)
         {
+            //Arrange
             var boardCreator = new BoardCreator();
             var board = boardCreator.CreateBoard(boardRows, boardColumns);
 
@@ -134,9 +145,11 @@ namespace Battleship.Tests
             var shipPlacer = new ShipPlacer();
             shipPlacer.PlaceShip(ship, board, placementRow, placementColumn);
 
+            //Act
             var attacker = new Attacker();
             attacker.Attack(board, attackRow, attackColumn);
 
+            //Assert
             Assert.True(board.BoardCellStatuses[attackRow, attackColumn] == boardCellStatus);
         }
         [Theory]
@@ -158,6 +171,7 @@ namespace Battleship.Tests
         ShipTypes shipType,
         BoardCellStatus boardCellStatus)
         {
+            //Arrange
             var boardCreator = new BoardCreator();
             var board = boardCreator.CreateBoard(boardRows, boardColumns);
 
@@ -167,9 +181,11 @@ namespace Battleship.Tests
             var shipPlacer = new ShipPlacer();
             shipPlacer.PlaceShip(ship, board, placementRow, placementColumn);
 
+            //Act
             var attacker = new Attacker();
             attacker.Attack(board, attackRow, attackColumn);
 
+            //Assert
             Assert.True(board.BoardCellStatuses[attackRow, attackColumn] == boardCellStatus);
         }
 
@@ -187,7 +203,6 @@ namespace Battleship.Tests
                   ShipTypes shipType)
         {
             //Arrange
-
             var boardCreator = new BoardCreator();
             var board = boardCreator.CreateBoard(boardRows, boardColumns);
 
