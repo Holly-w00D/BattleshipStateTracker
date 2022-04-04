@@ -30,12 +30,12 @@ namespace BattleshipStateTracker.Implementations
             
             if (row < 0 || row > board.Rows - 1)
             {
-                throw new System.ArgumentException(errorMessage);
+                throw new System.IndexOutOfRangeException(errorMessage);
             }
 
             if (column < 0 || column > board.Columns - 1)
             {
-                throw new System.ArgumentException(errorMessage);
+                throw new System.IndexOutOfRangeException(errorMessage);
             }
         }
     }

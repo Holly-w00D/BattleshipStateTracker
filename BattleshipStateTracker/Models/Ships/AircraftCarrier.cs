@@ -12,6 +12,7 @@ namespace BattleshipStateTracker.Models.Ships
         public AircraftCarrier () 
         { 
             ShipType = ShipTypes.AircraftCarrier;
+            Size = 5;
         }
     }
 }

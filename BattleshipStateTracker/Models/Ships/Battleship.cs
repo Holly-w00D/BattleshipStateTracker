@@ -12,6 +12,7 @@ namespace BattleshipStateTracker.Models.Ships
         public Battleship()
         {
             ShipType = ShipTypes.Battleship;
+            Size = 4;
         }
     }
 }

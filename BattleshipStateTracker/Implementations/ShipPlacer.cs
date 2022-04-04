@@ -24,29 +24,29 @@ namespace BattleshipStateTracker.Implementations
 
             if (row < 0 || row > board.Rows - 1)
             {
-                throw new System.ArgumentOutOfRangeException(errorMessage);
+                throw new System.IndexOutOfRangeException(errorMessage);
             }
 
             if (column < 0 || column > board.Columns - 1)
             {
-                throw new System.ArgumentOutOfRangeException(errorMessage);
+                throw new System.IndexOutOfRangeException(errorMessage);
             }
 
             for (int i = 0; i < ship.Size; i++)
             {
                 if (row + i < 0 || row + i > board.Rows - 1)
                 {
-                    throw new System.ArgumentOutOfRangeException(errorMessage);
+                    throw new System.IndexOutOfRangeException(errorMessage);
                 }
 
                 if (column + i < 0 || column + i > board.Columns - 1)
                 {
-                    throw new System.ArgumentOutOfRangeException(errorMessage);
+                    throw new System.IndexOutOfRangeException(errorMessage);
                 }
 
                 if (board.BoardCellStatuses[row + i, column + i] != BoardCellStatus.Unoccupied)
                 {
-                    throw new System.ArgumentException("Ship's placement is invalid");
+                    throw new System.ArgumentException("Ship's placement is invalid, space is occupied");
                 }
             }
         }
