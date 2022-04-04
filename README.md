@@ -54,7 +54,7 @@ Swagger documentation available here: https://app.swaggerhub.com/apis/cameronfat
 
 Create a board.
 
-``Local URL:`` https://localhost:5001/api/battle/create
+``Local URL:`` https://localhost:44392/api/battle/create
 
 ``Public URL:`` https://battleshipstatetracker.azurewebsites.net/api/battle/create
 ```
@@ -66,7 +66,7 @@ Create a board.
 
 Add a battleship to the board.
 
-``Local URL:`` https://localhost:5001/api/battle/place
+``Local URL:`` https://localhost:44392/api/battle/place
 
 ``Public URL:`` https://battleshipstatetracker.azurewebsites.net/api/battle/place
 ```
@@ -80,7 +80,7 @@ Add a battleship to the board.
 ```
 Take an "attack", expecting a hit.
 
-``Local URL:`` https://localhost:5001/api/battle/attack
+``Local URL:`` https://localhost:44392/api/battle/attack
 
 ``Public URL:`` https://battleshipstatetracker.azurewebsites.net/api/battle/attack
 
