@@ -16,6 +16,10 @@ Application should not implement the entire game, just the state tracker. No UI 
 
 The application has been deployed using Azure and can be viewed here: https://battleshipstatetracker.azurewebsites.net/
 
+# Swagger Documentation
+
+Swagger documentation available here: https://app.swaggerhub.com/apis/cameronfathers/BattleshipStateTrackerAPI/0.1/
+
 # Dependencies
 ● [.NET Core 5.0](https://www.microsoft.com/net/download)
 
